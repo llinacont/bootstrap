@@ -1,1 +1,1 @@
-lessc less\bootstrap.less > D:\talent_to_fame\ttf\vendor\assets\stylesheets\bootstrap.min.css
+lessc less\bootstrap.less > ..\ttf\vendor\assets\stylesheets\bootstrap.min.css
