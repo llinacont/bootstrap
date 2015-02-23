@@ -1,0 +1,133 @@
+.playlist{
+	background-color: @gray;
+	border-color: @gray-light;
+    border-radius: @border-radius-base;
+	opacity: 0.95;
+    z-index: 300;
+
+    bottom: 0;
+
+    height: 100%
+}
+
+#playlist-inner{
+    top: 3.5em;
+    z-index: 400;
+
+
+    .modal-header{
+        background-color: #FFFFFF;
+        border-bottom: 0px;
+        border-right: 10px solid @gray-light;
+
+        h4{
+            font-family: 'Raleway', sans-serif;
+            color: @brand-primary;
+        }
+    
+        .close{
+            margin-top: -4px;
+            &:hover {
+                color: @brand-primary;
+                text-decoration: none;
+            }
+            .glyphicon{
+                top: 8px;
+            }
+        }
+    }
+
+    .modal-body{
+        display: table;
+        margin: auto;
+        padding: 10px;
+        position: relative;
+
+        .row-fluid{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .media-left{
+            .thumbnail{
+                background-color: transparent;
+                border: 0px solid #DDDDDD;
+                border-radius: 4px;
+                display: block;
+                line-height: 1.42857;
+                margin-bottom: -4px;
+                padding: 0px;
+                transition: border 0.2s ease-in-out 0s;
+
+                img{
+                    width: 100px;
+                }
+
+                .play{
+                    background-color: #FAFAFA;
+                    display: none;
+                    left: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: -63px;
+                    opacity: 0.3;
+                    position:relative
+                }
+
+
+            }
+        }
+
+        .media-body{
+            background-color: #FFFFFF;
+            border-radius: 2px;
+            opacity: 1;
+        }
+
+        .caption{
+            h6{
+                margin-bottom: 6px;
+                margin-top: 5px;
+                text-indent: 5px;
+            }
+
+            p{
+                color: #9A9A9A;
+                font-size: 10px;
+                margin: 0;
+                text-indent: 5px;
+            }
+        }
+    }
+}
+
+.playlist-position{
+    display: none;
+
+    left: 0;
+    position: fixed;
+
+    width: 336px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.playlist-inner{
+    .row{
+        margin-top: -1em;
+        .modal-header{ 
+            padding: 0px;
+            .close{
+            }
+        }
+    }
+}
+
+.playlist-pos{
+    padding-top: 6em;
+	height: 100%;
+	width: 320px;
+    bottom: 0;
+	position: fixed;
+	left: 0;
+}
