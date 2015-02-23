@@ -1,1 +1,0 @@
-lessc less\bootstrap.less > ..\ttf\vendor\assets\stylesheets\bootstrap.min.css
