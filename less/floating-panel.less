@@ -1,4 +1,4 @@
-.playlist{
+.playlist-panel{
 	background-color: @gray;
 	border-color: @gray-light;
     border-radius: @border-radius-base;
@@ -19,14 +19,19 @@
         background-color: #FFFFFF;
         border-bottom: 0px;
         border-right: 10px solid @gray-light;
+        padding: 30px;
 
         h4{
             font-family: 'Raleway', sans-serif;
             color: @brand-primary;
+
+            p{
+             margin: 4px 0 10px;
+            }
         }
     
         .close{
-            margin-top: -4px;
+            margin: -16px;
             &:hover {
                 color: @brand-primary;
                 text-decoration: none;
@@ -34,6 +39,14 @@
             .glyphicon{
                 top: 8px;
             }
+        }
+
+        .col-md-8{
+            margin: -16px -16px -16px -35px;
+        }
+
+        .col-md-4{
+            margin-top: -10px;
         }
     }
 
