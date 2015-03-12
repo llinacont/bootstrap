@@ -61,55 +61,59 @@
             margin-top: 10px;
         }
 
-        .media-left{
-            .thumbnail{
-                background-color: transparent;
-                border: 0px solid #DDDDDD;
-                border-radius: 4px;
-                display: block;
-                line-height: 1.42857;
-                margin-bottom: -4px;
-                padding: 0px;
-                transition: border 0.2s ease-in-out 0s;
-
-                img{
-                    width: auto;
-                }
-
-                .play{
-                    background-color: #FAFAFA;
-                    display: none;
-                    left: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: -63px;
-                    padding-top: 0px;
-                    opacity: 0.3;
-                    position:relative
-                }
-
-
+        .media {
+            &active{
+                box-shadow: 0 0 30px -2px #FFFFFF;
             }
-        }
+            
+            .media-left{
+                .thumbnail{
+                    background-color: transparent;
+                    border: 0px solid #DDDDDD;
+                    border-radius: 4px;
+                    display: block;
+                    line-height: 1.42857;
+                    margin-bottom: -4px;
+                    padding: 0px;
+                    transition: border 0.2s ease-in-out 0s;
 
-        .media-body{
-            background-color: #FFFFFF;
-            border-radius: 2px;
-            opacity: 1;
-        }
+                    img{
+                        width: auto;
+                    }
 
-        .caption{
-            h6{
-                margin-bottom: 6px;
-                margin-top: 5px;
-                text-indent: 5px;
+                    .play{
+                        background-color: #FAFAFA;
+                        display: none;
+                        left: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: -63px;
+                        padding-top: 0px;
+                        opacity: 0.3;
+                        position:relative
+                    }
+                }
             }
 
-            p{
-                color: #9A9A9A;
-                font-size: 10px;
-                margin: 0;
-                text-indent: 5px;
+            .media-body{
+                background-color: #FFFFFF;
+                border-radius: 2px;
+                opacity: 1;
+            }
+
+            .caption{
+                h6{
+                    margin-bottom: 6px;
+                    margin-top: 5px;
+                    text-indent: 5px;
+                }
+
+                p{
+                    color: #9A9A9A;
+                    font-size: 10px;
+                    margin: 0;
+                    text-indent: 5px;
+                }
             }
         }
     }
