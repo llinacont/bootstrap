@@ -71,6 +71,20 @@
     text-decoration: none;
   }
 }
+.btn-default-active {
+  background-color: @btn-primary-color;
+  border-color: @btn-primary-border;
+  color: @btn-primary-bg;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: @btn-default-color;
+    border-color: @btn-default-border;
+    background-color: @btn-default-bg;
+    text-decoration: none;
+  }
+}
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }
