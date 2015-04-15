@@ -18,15 +18,13 @@
 
     width: 320px;
     height: 95%;
-}
 
-.floating-pos{
-    padding-top: 6em;
-    height: 100%;
-    width: 320px;
-    bottom: 1;
-    position: fixed;
-    left: 0;
+    .divider {
+        background-color: #E5E5E5;
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+    }
 }
 
 #playlist-inner{
@@ -240,6 +238,10 @@
         padding: 10px;
         position: relative;
 
+        .panel-default {
+            padding: 9px;
+        }
+
         .row-fluid{
             margin-bottom: 10px;
             margin-top: 10px;
@@ -317,7 +319,6 @@
 
         a{
             color: #777;
-            font-size: 20px;
             b{
                 font-weight: normal;
                 margin-left: 10px;
@@ -406,28 +407,37 @@
                 }
             }
 
-            .search-result-component {
-                margin: 5px 0px;
-                width: 268px;
-            }
+            .search-results-panel {
+                padding: 9px 0px;
 
-            .search-result-title {
-                margin-top: 5px;
-                padding: 0;
+                .search-result-component {
+                    margin: 0px;
+                    width: 268px;
 
-                h4 {
-                    margin-top: 5px;
-                    margin-bottom: 5px;
+                    .search-result-title {
+                        padding: 0;
+                        font-size: 12px;
+
+                        h6 {
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        }
+
+                        a {
+                            color: #C52348;
+                            text-decoration: none;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .thumbnail {
+                        margin: 0px;
+                    }
                 }
 
-                a {
-                    color: #C52348;
-                    text-decoration: none;
-                }
-            }
-
-            .thumbnail {
-                margin: 0px;
             }
         }
 
