@@ -19,6 +19,15 @@
 }
 
 @font-face {
+  font-family: 'TTF Crown Icon';
+  src:url('fonts/ttf-crown-icon.eot?-6t5fk');
+  src:url('fonts/ttf-crown-icon.eot?#iefix-6t5fk') format('embedded-opentype'),
+    url('fonts/ttf-crown-icon.ttf?-6t5fk') format('truetype'),
+    url('fonts/ttf-crown-icon.woff?-6t5fk') format('woff'),
+    url('fonts/ttf-crown-icon.svg?-6t5fk#icomoon') format('svg');
+}
+
+@font-face {
   font-family: 'Raleway';
   src: url('@{icon-font-path}Raleway-Medium.ttf') format('truetype');
 }
@@ -31,6 +40,22 @@
 @font-face {
   font-family: 'Blenda-script';
   src: url('@{icon-font-path}Blenda-script.otf') format('truetype');
+}
+
+// TTF Icons
+.ttf-crown-icon {
+  font-family: 'TTF Crown Icon';
+  speak: none;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ttf-crown-icon:before {
+  content: "\e600";
 }
 
 // Catchall baseclass
